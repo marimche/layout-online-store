@@ -730,9 +730,9 @@ text-align: center;
 	font-family: 'SFProDisplay-Semibold', sans-serif;
 }
 
-.footer__top-item{
+/* .footer__top-item{
 
-}
+} */
 
 .footer-list{
 	font-size: 14px;
@@ -755,3 +755,30 @@ text-align: center;
 	margin-left: 30px;
 }
 
+.breadcrumbs{
+	margin-bottom: 40px;
+}
+
+.breadcrumbs__list-item{
+	display: inline-block;
+	padding-right: 16px;
+	margin-right: 10px;
+	position: relative;
+	font-size: 15px;
+	line-height: 18px;
+	color: #C4C4C4;
+}
+
+.breadcrumbs__list-item::after{
+	content: "";
+	position: absolute;
+	right: 0;
+	background: url('../images/back.svg');
+	width: 6px; 
+	height: 9px;
+	bottom: 5px;
+}
+
+.breadcrumbs__list-item:last-child::after{
+	display: none;
+}
