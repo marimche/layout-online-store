@@ -27,4 +27,13 @@ $(function(){
 		nextArrow: '	<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/arrow-black-right.svg" alt="arrow-black-right"></button>'
 	});
 
+	$('.filter-style').styler();
+
+	$('.filter__item-drop').on('click', function(){
+		$(this).toggleClass('filter__item-drop--active');
+		$(this).next().slideToggle('200');
+	});
+
+	$(".js-range-slider").ionRangeSlider();
+
 });

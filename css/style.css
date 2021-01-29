@@ -173,6 +173,7 @@ body{
 .banner-section__inner{
 	display: flex;
 	justify-content: space-between;
+	max-height: 400px;
 
 }
 
@@ -306,7 +307,7 @@ text-align: center;
 	height: 10px;
 }
 
-.sale-item__footer{
+ .sale-item__footer{
 	background-color: #F0F0F4;
 	padding: 25px 20px;
 	line-height: 21px;
@@ -326,7 +327,7 @@ text-align: center;
 	font-family: 'SFProDisplay-Bold' sans-serif;
 	font-weight: 700;
 	margin-bottom: 7px;
-}
+} 
 
 .banner-section__slider-img{
 	object-fit: cover;
@@ -336,7 +337,7 @@ text-align: center;
 .sale-item__img{
 	object-fit: contain;
 }
-
+ 
 .search__tabs{
 	margin-bottom: 25px;
 }
@@ -392,7 +393,7 @@ text-align: center;
 	padding: 17px 41px;
 	border: none;
 	margin-left: -3px;
-}
+} 
 
 .categories__inner{
 	display: flex;
@@ -453,9 +454,9 @@ text-align: center;
 .categories__item-text::after{
 	content: url('../images/back.svg');
 	padding-left: 2px;
-}
+} 
 
-.product-item__wrapper{
+ .product-item__wrapper{
 	position: relative;
 	width: 271px;
 }
@@ -473,6 +474,9 @@ text-align: center;
 .product-item__title{
 	font-weight: normal;
 	padding: 14px 0 25px;
+
+	font-size: 18px;
+	line-height: 21px;
 }
 
 .product-item__favorite{
@@ -503,7 +507,7 @@ text-align: center;
 
 .product-item__price{
 	font-weight: bold;
-	line-height: 36px;
+	/* line-height: 36px; */
 	font-size: 30px;
 }
 
@@ -638,9 +642,9 @@ text-align: center;
 
 .slick-slide img{
 	display: inline;
-}
+} 
 
-.products{
+ .products{
 	margin-bottom: 80px;
 }
 
@@ -656,11 +660,11 @@ text-align: center;
 	text-transform: uppercase;
 	background: #F0F0F4;
 	padding: 16px 43px;
-}
+} 
 
 .banner{
 	margin-bottom: 80px;
-}
+} 
 
 .footer{
 	background: #F0F0F4;
@@ -728,16 +732,15 @@ text-align: center;
 	line-height: 13px;
 	letter-spacing: 0.12em;
 	font-family: 'SFProDisplay-Semibold', sans-serif;
-}
+} 
 
 /* .footer__top-item{
 
 } */
 
-.footer-list{
+ .footer-list{
 	font-size: 14px;
 	line-height: 22px;
-	/* color: #2F3035; */
 }
 
 .footer__top-social.footer__top-item{
@@ -753,9 +756,9 @@ text-align: center;
 
 .social-list__item + .social-list__item {
 	margin-left: 30px;
-}
+} */
 
-.breadcrumbs{
+ .breadcrumbs{
 	margin-bottom: 40px;
 }
 
@@ -781,7 +784,7 @@ text-align: center;
 
 .breadcrumbs__list-item:last-child::after{
 	display: none;
-}
+} 
 
 .catalog{
 	margin-bottom: 100px;
@@ -886,3 +889,118 @@ button.catalog__filter-btnline{
 .pagination-list__item a{
 	display: block;
 }
+
+.aside-filter__tabs{
+	display: flex;
+	justify-content: space-between;
+}
+
+.aside-filter__tab{
+	font-weight: regular;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: #C4C4C4;
+	width: 50%;
+}
+
+.aside-filter__tab.tab--active{
+	font-family: 'SFProDisplay-Bold', sans-serif;
+	color: #2F3035;
+	font-weight: bold;
+}
+
+.aside-filter__tab.tab--active span{
+	display: inline-block;
+	border-bottom: 2px solid #f33;
+	padding-bottom: 7px;
+}
+
+.aside-filter__item-drop{
+	margin: 40px 0;
+}
+
+.aside-filter__item-title{
+	font-family: 'SFProDisplay-Semibold', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	padding-left: 26px;
+}
+
+.filter__item-drop{
+	/* margin-bottom: 20px;  коммент*/
+	position: relative;
+	cursor: pointer;
+}
+
+.filter__item-drop::before{
+	content: "";
+	background-image: url('../images/shape-down.svg');
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	width: 12px;
+	height: 8px;
+	transform: rotate(0deg);
+}
+
+.filter__item-drop--active::before{
+	transform: rotate(180deg);
+}
+
+.aside-filter__content{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.aside-filter__content-box{
+	width: 50%;
+}
+
+.aside-filter__content-label{
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.jq-checkbox, .jq-radio{
+	background: #fff;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #C4C4C4;
+	border-radius: 1px;
+	box-shadow: none;
+	vertical-align: -2px;
+	margin: 0 8px 0;
+}
+
+.jq-checkbox.checked, .jq-radio.checked{
+ background: #f33;
+ border: none;
+}
+ 
+ .jq-checkbox.checked .jq-checkbox__div{
+	width: 8px;
+	height: 6px;
+	margin: 4px 3px 3px;
+	border-bottom: none;
+	border-left: none;
+	transform: rotate(0);
+	background-image: url('../images/shape-grey.svg');
+ }
+
+ .jq-radio.checked .jq-radio__div{
+	width: 0;
+	height: 0;
+	margin: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+ }
+
+ .aside-filter__content.aside-filter__content-radio{
+	 flex-wrap: nowrap;
+ } 
