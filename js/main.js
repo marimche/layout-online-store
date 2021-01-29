@@ -34,6 +34,13 @@ $(function(){
 		$(this).next().slideToggle('200');
 	});
 
-	$(".js-range-slider").ionRangeSlider();
+	$(".js-range-slider").ionRangeSlider({
+		grid: false,
+		type: "double",
+		min: 100000, 
+		max: 500000
+	});
+
+	
 
 });
