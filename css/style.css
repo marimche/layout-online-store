@@ -952,11 +952,12 @@ button.catalog__filter-btnline{
 .aside-filter__content{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .aside-filter__content-box{
 	width: 50%;
+	margin-bottom: 10px;
 }
 
 .aside-filter__content-label{
@@ -973,7 +974,7 @@ button.catalog__filter-btnline{
 	border-radius: 1px;
 	box-shadow: none;
 	vertical-align: -2px;
-	margin: 0 8px 0;
+	margin: 0;
 }
 
 .jq-checkbox.checked, .jq-radio.checked{
@@ -1069,3 +1070,101 @@ button.catalog__filter-btnline{
 	background-color: transparent;
 }
 
+.aside-filter__item-list{
+	margin: 46px 0 40px;
+}
+
+.filter__item-list{
+	padding-top: 34px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #C4C4C4;
+}
+
+.filter__item-listtitle{
+	font-family: 'SFProDisplay-Semibold', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	padding-bottom: 14px;
+	padding-left: 26px;
+}
+
+.filter__item-listselect{
+	font-family: 'Barlow', sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: #48494D;
+}
+
+.jq-selectbox__select{
+	font-family: 'Barlow', sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: #48494D;
+
+	height: 20px;
+	padding: 0 25px 0 10px;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.jq-selectbox__trigger-arrow{
+	position: absolute;
+	top: 14px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	border: none;
+}
+
+.jq-selectbox__trigger {
+	background-image: url('../images/shape-down.svg');
+	bottom: 5px;
+	width: 12px;
+	height: 8px;
+	transform: rotate(0deg);
+	border-left: none;
+	top: 6px;
+	right: 9px;
+}
+
+.jq-selectbox__select:hover, .jq-selectbox__select:active{
+	background: transparent;
+	box-shadow: none;
+}
+
+.jq-selectbox.focused .jq-selectbox__select{
+	border: none;
+}
+
+.jq-selectbox li:hover{
+	background: rgba(107, 126, 172, 0.05);
+	color: rgba(0, 0, 0, 0.6);
+}
+.jq-selectbox li.selected{
+	background: rgba(107, 126, 172, 0.05);
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox__dropdown{
+	border-radius: 0;
+	padding-top: 15px;
+}
+
+.filter-more__btn{
+	font-size: 14px;
+	line-height: 17px;
+	color: #f33;
+	border: none;
+	border-bottom: 1px solid #f33;
+	background-color: transparent;
+	padding: 0;
+}
